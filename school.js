@@ -1,5 +1,3 @@
-////NTPBqk2EZ4e3CJYd
-//MONGO LINK : mongodb+srv://joshmarieta:NTPBqk2EZ4e3CJYd@cluster0.wmeug.mongodb.net/test
 const express = require('express');
 const mongoose = require('mongoose'); //this configuration will allows to connect to the db.
 
