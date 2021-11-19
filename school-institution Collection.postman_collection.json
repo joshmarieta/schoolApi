@@ -10,43 +10,126 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": null
+				"url": {
+					"raw": "localhost:3000/api/school",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"school"
+					]
+				}
 			},
 			"response": []
 		},
 		{
 			"name": "create school",
 			"request": {
-				"method": "GET",
+				"method": "POST",
 				"header": [],
-				"url": null
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"institution\" : \"KCA univeristy\",\r\n    \"location\" : \"Nairobi\",\r\n    \"course\" : [\"Finance\",\"BBIT\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/school",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"school"
+					]
+				}
 			},
 			"response": []
 		},
 		{
 			"name": "Get Specific Request",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": null
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"institution\": \"Univeristy of  Nairobi\",\r\n    \"location\": \"Nairobi\",\r\n    \"course\": [\r\n        \"Art\",\r\n        \"Criminology\",\r\n        \"Cyber Security\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/school/6196afa8f63b20790c1058ab",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"school",
+						"6196afa8f63b20790c1058ab"
+					]
+				}
 			},
 			"response": []
 		},
 		{
 			"name": "update a school's course",
 			"request": {
-				"method": "GET",
+				"method": "PUT",
 				"header": [],
-				"url": null
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"institution\": \"Univeristy of  Nairobi\",\r\n    \"location\": \"Nairobi\",\r\n    \"course\": [\r\n        \"Art\",\r\n        \"Criminology\",\r\n        \"Cyber Security\",\r\n        \"Oral Health\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/school/6196abe1f63b20790c105898",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"school",
+						"6196abe1f63b20790c105898"
+					]
+				}
 			},
 			"response": []
 		},
 		{
 			"name": "delete school",
 			"request": {
-				"method": "GET",
+				"method": "DELETE",
 				"header": [],
-				"url": null
+				"url": {
+					"raw": "localhost:3000/api/school/6196afa8f63b20790c1058ab",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"school",
+						"6196afa8f63b20790c1058ab"
+					]
+				}
 			},
 			"response": []
 		}

@@ -10,7 +10,7 @@ const app = express();
 
 app.use(bodyParser.json());
 
-mongoose.connect('mongodb+srv://joshmarieta:<password>@cluster0.wmeug.mongodb.net/schools')
+mongoose.connect('mongodb+srv://joshmarieta:<password>d@cluster0.wmeug.mongodb.net/schools')
   .then(() => {
     console.log('Successfully connected to MongoDB Atlas!');
   })

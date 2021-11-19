@@ -10,16 +10,45 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": null
+				"url": {
+					"raw": "localhost:4000/api/student",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"student"
+					]
+				}
 			},
 			"response": []
 		},
 		{
 			"name": "create student",
 			"request": {
-				"method": "GET",
+				"method": "POST",
 				"header": [],
-				"url": null
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Jack Woods\",\r\n    \"institution\": \"Murang'a University\",\r\n    \"course\": [\r\n        \"Electrical Engineering\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/api/student",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"student"
+					]
+				}
 			},
 			"response": []
 		},
@@ -28,25 +57,67 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": null
+				"url": {
+					"raw": "localhost:4000/api/student/6196b30f90cb85d04ad89761",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"student",
+						"6196b30f90cb85d04ad89761"
+					]
+				}
 			},
 			"response": []
 		},
 		{
 			"name": "update student",
 			"request": {
-				"method": "GET",
+				"method": "PUT",
 				"header": [],
-				"url": null
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Janet Nelson\",\r\n    \"institution\": \"KCA University\",\r\n    \"course\": [\r\n        \"Oral Health\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/api/student/6196b50690cb85d04ad8976f",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"student",
+						"6196b50690cb85d04ad8976f"
+					]
+				}
 			},
 			"response": []
 		},
 		{
 			"name": "delete a student",
 			"request": {
-				"method": "GET",
+				"method": "DELETE",
 				"header": [],
-				"url": null
+				"url": {
+					"raw": "localhost:4000/api/student/6196b30f90cb85d04ad89761",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"student",
+						"6196b30f90cb85d04ad89761"
+					]
+				}
 			},
 			"response": []
 		}
