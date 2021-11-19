@@ -13,4 +13,6 @@ npm install --save mongoose
 
 Make sure to download mongoDB compass for unit testing
 
+Use Postman Too
+
 Finally run nodemon
